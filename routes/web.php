@@ -9,5 +9,6 @@ Route::get('/', function () {
 
 // Route::get("/register", [AuthController::class, 'register']);
 
-Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/signup', [AuthController::class, 'index']);
+Route::post('/index', [AuthController::class, 'store'])->name('store');

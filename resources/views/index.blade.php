@@ -106,7 +106,8 @@ form .text h3 a:hover{
 <body>
   <div class="wrapper">
     <h2>Registration</h2>
-    <form action="{{ route('register') }}" method="POST">
+    <form action="{{ route('store') }}" method="post">
+
       @csrf
       <div class="input-box">
         <!-- <input type="text" placeholder="Enter your name" required> -->
@@ -124,7 +125,7 @@ form .text h3 a:hover{
 
       <div class="input-box">
         <label for="PhoneNo">Phone Number</label>
-        <input type="tel" id="Phone Number" name="Phone Number"  required>
+        <input type="text" id="PhoneNo" name="PhoneNo" required>
       </div>
 
 
@@ -136,7 +137,7 @@ form .text h3 a:hover{
 
       <div class="input-box">
         <label for="SchoolName">School Name</label>
-        <input type="text" id="School Name" name="School Name"  required>
+        <input type="text" id="SchoolName" name="SchoolName" required>
       </div>
 
 
@@ -231,7 +232,7 @@ form .text h3 a:hover{
 
       <div class="input-box">
         <label for="Remaining_amount">Remaining_amount</label>
-        <input type="integer" id="Remaining_amount" name="Remaining_amount"  required>
+        <input type="integer" id="Remaining_amount" name="Remaining_amount" required>
       </div>
 
 
